@@ -70,4 +70,15 @@ If we assume you have connected two cables, one to pin 11 and ground and one to 
 Links to tutorials/documentation as too much for here.
 
 ## Configuring Hardware
-Images + descriptions of power, ground, 11 and 12 pins.
+How it is connected and when both cables are "in water".
+![breadboard](https://github.com/smjnab/WiPee/blob/master/bread.jpg)
+
+From left to right:
+* Blue ground connected to WiPy ground.
+* White VIN connected to (THIS IS ERROR, BRAIN FREEZE) 3v3, should have been VIN which is the first pin to the left of the blue ground. Sorry about this. If using 3v3 make sure source is 3v3!
+* Yellow is pin 11, connected with ground (blue) and this means water level is elevated.
+* White is pin 12, connected with ground (blue) and this means water level is critical.
+
+Add power source and by breaking/making connection for pin 11 and 12 you can simulate the WiPee monitoring changes in water level.
+
+
