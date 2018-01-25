@@ -69,7 +69,18 @@ If we assume you have connected two cables, one to pin 11 and ground and one to 
 
 
 ## Configuring AWS
-Going to add this section shortly.
+There is too much to write about the AWS bits so I'll link relevant and useful tutorials/documentation for each bit. If completely new to AWS, check out https://aws.amazon.com/ and prepared to be confused, there is a ton of stuff. A good place to start for quick peeks at what you can do, and how to do it, is https://aws.amazon.com/getting-started/tutorials/.
+
+If you have an AWS account or have a new one created (most, maybe even all, will be free tier) then here are the general things needed to be done:
+
+* AWS SES, https://docs.aws.amazon.com/ses/latest/DeveloperGuide/quick-start.html is a quick start guide. You also get examples and step-by-step in the AWS Lambda articles below.
+
+* AWS Lambda, https://docs.aws.amazon.com/lambda/latest/dg/get-started-create-function.html This is a good place to start trying to set up a Lambda function. This is a way to execute code, as if you had a server but without having to setup a server. You call the Lambda function, it does its thing and then goes back to sleep. To specifically work with sending email, https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html, this guide can be used in combination with setting up a Python Lambda. I'm using Python here, as the rest of the project is Python. But you could as well use, for example, C# or nodejs for this part.
+
+* AWS IoT, https://docs.aws.amazon.com/iot/latest/developerguide/iot-gs.html I used this guide, followed the steps but instead of using the AWS IoT button I used my WiPy. When uncertain I also used this guide https://docs.pycom.io/chapter/tutorials/all/aws.html You should only look at the section "Creating the message broker (Amazon website)", the rest is already setup and configured with the WiPee script.
+
+My rule in IoT is ```"SELECT mailType, timeString, timeStringCritical FROM 'wipeeMail' WHERE mailType < 10"``` where wipeeMail is the topic I publish messages to. From the add action option, you can select "Invoke a Lambda function passing the message data". There you select the lambda function you created earlier. After doing this, if you go back to Lambda you should see a graphic showing input from IoT to the Lambda function. If you tested and verified that each part works, and updated the main.py with the IoT url and topic, then restarting the WiPy should publish the "I'm up and running" message to your inbox.
+
 
 ## Configuring Hardware
 How it is connected and when both cables are "in water".
