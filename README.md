@@ -84,7 +84,7 @@ My rule in IoT is ```"SELECT mailType, timeString, timeStringCritical FROM 'wipe
 
 ## Configuring Hardware
 How it is connected and when both cables are "in water".
-![breadboard](https://github.com/smjnab/WiPee/blob/master/bread.jpg)
+![breadboard](https://github.com/smjnab/WiPee/blob/master/images/bread.jpg)
 
 From left to right:
 * Blue ground connected to WiPy ground.
@@ -98,7 +98,7 @@ Add power source and by breaking/making connection for pin 11 and 12 you can sim
 ## The final device
 Half the stuff I had home and half the stuff (box, antenna) I bought for the project.
 
-![box](https://github.com/smjnab/WiPee/blob/master/box.jpg)
+![box](https://github.com/smjnab/WiPee/blob/master/images/box.jpg)
 
-![inside](https://github.com/smjnab/WiPee/blob/master/inside.jpg)
+![inside](https://github.com/smjnab/WiPee/blob/master/images/inside.jpg)
 
