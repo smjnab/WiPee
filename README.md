@@ -60,8 +60,11 @@ monitorTick = 0.5
 deepSleepTime = 300000 # 300000 = 5 min
 ```
 If we assume you have the certificates for AWS and done all the above, then uploading the edited main.py and resetting the device is all that is needed for it to begin monitoring. 
+
 If we assume you have IoT and Lambda configured, then in a few seconds a mail should come letting you know WiPee is up and running.
+
 If we assume you have connected two cables, one to pin 11 and ground and one to pin 12 and ground, then dipping them in water, will send you a new mail at the next monitoring run.
+
 
 ## Configuring AWS
 Links to tutorials/documentation as too much for here.
