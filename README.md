@@ -82,3 +82,10 @@ From left to right:
 Add power source and by breaking/making connection for pin 11 and 12 you can simulate the WiPee monitoring changes in water level.
 
 
+## The final device
+Half the stuff I had home and half the stuff (box, antenna) I bought for the project.
+
+![box](https://github.com/smjnab/WiPee/blob/master/box.jpg)
+
+![inside](https://github.com/smjnab/WiPee/blob/master/inside.jpg)
+
