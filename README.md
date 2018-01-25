@@ -59,7 +59,9 @@ monitorTick = 0.5
 # How long in ms device should sleep between meassure runs.
 deepSleepTime = 300000 # 300000 = 5 min
 ```
-If we assume you have the certificates for AWS and done all the above, then uploading the edited main.py and resetting the device is all that is needed for it to begin monitoring. 
+* Upload/Sync main.py and boot.py to the WiPy. All done!
+
+If we assume you have the certificates for AWS and done all the above, then after resetting the device, it will begin monitoring. 
 
 If we assume you have IoT and Lambda configured, then in a few seconds a mail should come letting you know WiPee is up and running.
 
