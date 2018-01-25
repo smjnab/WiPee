@@ -5,6 +5,7 @@ Run code on a WiPy and with two cables connected to port 11 and 12 the WiPy will
 * https://pycom.io/hardware/wipy-3-0-specs/ with latest firmware.
 * Pycoms AWSIoTPythonSDK, https://github.com/pycom/aws-pycom/tree/master/AWSIoTPythonSDK
 * AWS account https://aws.amazon.com to use IoT, Lambda and SES.
+* Various cables, a box and what not you might have at home or can obtain easily.
 
 ## Configuring WiPy
 * Connect to the WiPy. https://docs.pycom.io/chapter/gettingstarted/ I use Visual Studio Code with the Pymakr plugin.
