@@ -67,7 +67,7 @@ If we assume you have connected two cables, one to pin 11 and ground and one to 
 
 
 ## Configuring AWS
-Links to tutorials/documentation as too much for here.
+Going to add this section shortly.
 
 ## Configuring Hardware
 How it is connected and when both cables are "in water".
